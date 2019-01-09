@@ -1,0 +1,77 @@
+
+body {
+	background-color: #232323;
+	margin: 0;								/* removes black space on all sides */
+	font-family: "Montserrat", "Avenir";
+}
+
+h1 {
+	color: white;
+	line-height: 1.1;
+	background: steelblue;
+	text-align: center;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 0;						/* 20px padding on top and bottom only */	
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;							/* take up 100% of the parent element */
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit; 					/* inherits font size */
+	transition: all 0.3s;					/* if any property changes on any button (all), it should take two seconds (2.0) */
+	-webkit-transition: all 0.3;			/* for browsers that use the webkit engine (safari) */
+	-webkit-transition: all 0.3;			/* for browsers that are built on mozilla (firefox) */
+	outline: none;							/* prevents browsers from showing an outline around buttons when clicked */
+}
+
+button:hover {
+	color: white;
+	background-color: steelblue;
+}
+
+.square {
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;					/* serves as content for the divs, so the background can be visible */
+	float: left;
+	margin: 1.66%; 
+	border-radius: 15%;
+	transition: background 0.6s;			/* if the background changes, it should take 0.6 seconds */
+	-webkit-transition: background 0.6;		/* for browsers that use the webkit engine (safari) */
+	-webkit-transition: background 0.6;		/* for browsers that are built on mozilla (firefox) */
+}
+
+#container {
+	margin: 20px auto;						/* 20px on top and bottom, auto left and right, makes it centered at the top */
+	max-width: 650px;
+}
+
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	background-color: steelblue;
+	color: white;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;					
+}
+
+
